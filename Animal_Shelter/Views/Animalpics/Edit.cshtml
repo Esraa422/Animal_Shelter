@@ -1,0 +1,65 @@
+﻿﻿@model Animalpic
+@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization;
+@if (CultureInfo.CurrentCulture.Name.StartsWith("ar"))
+{
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous">
+    <style>
+        .cr {
+            direction: rtl;
+        }</style>
+}
+@inject IViewLocalizer localizer
+@{
+    ViewData["Title"] = localizer["Update animalpic"] ;
+}
+<div class="container text cr">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1 class="text-white">@localizer["Updatte Animalpic"]</h1>
+        </p>
+        <div class="container">
+            <div class="col-md-8 offset-2">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="mb-4 text-center">
+                        <img id="ProfilePicturePreview" class="border-info rounded-circle" style="max-width: 150px" />
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="ProfilePictureURL" class="control-label text-white"></label>
+                        <input asp-for="ProfilePictureURL" class="form-control bg-warning" />
+                        <span asp-validation-for="ProfilePictureURL" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="FullName" class="control-label text-white"></label>
+                        <input asp-for="FullName" class="form-control bg-warning" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Bio" class="control-label text-white"></label>
+                        <input asp-for="Bio" class="form-control bg-warning" />
+                        <span asp-validation-for="Bio" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" value="@localizer["Update"]" class="btn btn-outline-warning float-lg-end" />
+                        <a class="btn btn-outline-light" asp-action="Index" asp-controller="Animalpics">@localizer["Show All"]</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById('ProfilePicturePreview');
+            output.src = $("#ProfilePictureURL").val();
+        })
+        $("#ProfilePictureURL").on("change", function () {
+            var output = document.getElementById('ProfilePicturePreview');
+            output.src = $(this).val();
+        })
+    </script>
+}

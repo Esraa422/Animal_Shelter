@@ -1,6 +1,7 @@
-﻿namespace Animal_Shelter.Data.Base
+﻿namespace Animal_Shelte.Data.Base
 {
     public interface IEntityBase
     {
+        int Id { get; set; }
     }
 }

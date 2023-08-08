@@ -1,6 +1,9 @@
-﻿namespace Animal_Shelter.Data.Services
+﻿using Animal_Shelte.Data.Base;
+using Animal_Shelte.Models;
+
+namespace Animal_Shelte.Data.Services
 {
-    public interface INationalitysService
+    public interface INationalitysService : IEntityBaseRepository<Nationality>
     {
     }
 }

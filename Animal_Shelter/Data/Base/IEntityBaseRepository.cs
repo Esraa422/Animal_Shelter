@@ -1,6 +1,6 @@
 ﻿namespace Animal_Shelter.Data.Base
 {
-    public interface Interface
+    public interface IEntityBaseRepository
     {
     }
 }

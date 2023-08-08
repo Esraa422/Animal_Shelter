@@ -1,6 +1,6 @@
 ﻿namespace Animal_Shelter.Data.Services
 {
-    public interface Interface4
+    public interface INationalitysService
     {
     }
 }

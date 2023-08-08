@@ -1,6 +1,6 @@
 ﻿namespace Animal_Shelter.Data.Services
 {
-    public interface Interface1
+    public interface ISheltersService
     {
     }
 }

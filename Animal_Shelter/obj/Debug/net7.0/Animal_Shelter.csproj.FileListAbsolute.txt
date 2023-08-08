@@ -1,0 +1,8 @@
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.csproj.AssemblyReference.cache
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.AssemblyInfoInputs.cache
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.AssemblyInfo.cs
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.csproj.CoreCompileInputs.cache
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.MvcApplicationPartsAssemblyInfo.cache
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.RazorAssemblyInfo.cache
+D:\Animal_shelter\Animal_Shelter\Animal_Shelter\obj\Debug\net7.0\Animal_Shelter.RazorAssemblyInfo.cs
